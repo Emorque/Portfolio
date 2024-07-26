@@ -1,13 +1,5 @@
 const gallery = document.getElementById("gallery");
-
-// window.onmousedown = e => {
-//   gallery.dataset.mouseDownAt = e.clientX;
-// }
-
-// window.onmouseup = () => {
-//   gallery.dataset.mouseDownAt = "0";
-//   gallery.dataset.prevPercentage = gallery.dataset.percentage;
-// }
+const leftSide = document.getElementById("left-container");
 
 const handleOnDown = e => gallery.dataset.mouseDownAt = e.clientX;
 
@@ -49,3 +41,25 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+// const handleMove = e => {
+//   leftSide.style.width = `${e.clientX / window.innerWidth * 100}%`;
+// }
+
+// document.onmousemove = e => handleMove(e);
+
+// document.ontouchmove = e => handleMove(e.touches[0]);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+    else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((e) => observer.observe(e));
