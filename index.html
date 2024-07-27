@@ -9,253 +9,257 @@
 
 <body>
   <div id="left-container" class="side">
-    <h2 id="left-text">Eric Rodriguez Software Engineer</h2>
+    <h2  data-value="Eric Rodriguez" class="left-text">Eric Rodriguez</h2>
+    <h2  data-value="Software Engineer" class="left-text">Software Engineer</h2>
   </div>
   <div id="pattern-container" class="side">
     <div id="pattern"></div>
   </div>
 
-  <div id="bio">
-    <img
-      src="img/ER.jpg"
-      width="384px"
-      height="384px"
-      alt="Portrait of Eric"
-    />
-    <h2>Based on New York City. I like to make new projects and love learning new technologies</h2>
-  </div>
-
-  <h1 class="cen">Work Experience</h1>
-  <div id="work-experience">
-    <section class="experience">
-      <div class="exp-text">
-        <h1>CodePath</h1>
-        <h2>September 2023 - Present</h2>
-        <h2>Tech Fellow</h2> 
-      </div> 
+  <section class="blackbg" style="background-color: black;">
+    <div id="bio">
       <img
-        src="img/codepathLogo.jpeg"
-        alt="NextDex logo"
+        src="img/ER.jpg"
+        width="384px"
+        height="384px"
+        alt="Portrait of Eric"
       />
-    </section>
-    <section class="experience">
-      <div class="exp-text">
-        <h1>Syracuse Unviersity</h1>
-        <h2>July 2023 - May 2024</h2>
-        <h2>Research Intern</h2> 
-      </div> 
-      <img
-        src="img/SYRACUSE_BlockS_ORANGE_RGB.png"
-        alt="Syracuse logo"
-
-      />
-    </section>
-  </div>
-
-
-  <div id="work-exp">
-    <div id="work-time">
-      <h1>Sep 2023 - Present</h1>
+      <h2>Based in New York City. <br> I love to make new projects and learn new technologies</h2>
+    </div>  
+  </section>
+  
+  <section class="whitebg">
+    <br/>
+    <h1 class="cen" style="color:white">Work Experience</h1>
+    <div id="work-exp">
+      <div id="work-time">
+        <h1>Sep 2023 - Present</h1>
+      </div>
+      <div id="work-content">
+        <a href="https://www.codepath.org/">
+          <h2>Tech Fellow · CodePath</h2>
+        </a>
+        <h3>Provided intensive mentorship and guidance to a total of 78 student Software Engineers, covering topics in Data Structures with Java and Python; and Web Development with JS, HTML, and CSS 
+        </h3>  
+        <h3>Customized the group learning experience to ensure active participation from all students in Zoom Breakout Rooms
+        </h>  
+      </div>
     </div>
-    <div id="work-content">
-      <a href="https://www.codepath.org/">
-        <h2>Tech Fellow · CodePath</h2>
-      </a>
-      <h3>Provided intensive mentorship and guidance to a total of 78 student Software Engineers, covering topics in Data Structures with Java and Python; and Web Development with JS, HTML, and CSS 
-      </h3>  
-      <h3>Customized the group learning experience to ensure active participation from all students in Zoom Breakout Rooms
-      </h>  
+    <div id="work-exp">
+      <div id="work-time">
+        <h1>July 2023 - May 2024</h1>
+      </div>
+      <div id="work-content">
+        <a href="https://syne-lab.github.io/projects/parapet/">
+          <h2>Research Intern · Syracuse University</h2>
+        </a>
+        <h3>Increased semantic validation of a policy authoring assistant's precision to 86%, recall to 77%, and accuracy to 72%; by refining a dataset of 300+ policies from recent IoT security literature and optimizing combinations of policy contexts with Python and documenting results in CSV files</h3>
+        <h3>Improved syntax validation of security policies to 93% by developing a systematic approach to translating natural language descriptions of security policies by testing the Natural Language Processing performance of multiple LLMs</h3>   
+      </div>
     </div>
-  </div>
-  <div id="work-exp">
-    <div id="work-time">
-      <h1>July 2023 - May 2024</h1>
-    </div>
-    <div id="work-content">
-      <a href="https://syne-lab.github.io/projects/parapet/">
-        <h2>Research Intern · Syracuse University</h2>
-      </a>
-      <h3>Increased semantic validation of a policy authoring assistant's precision to 86%, recall to 77%, and accuracy to 72%; by refining a dataset of 300+ policies from recent IoT security literature and optimizing combinations of policy contexts with Python and documenting results in CSV files</h3>
-      <h3>Improved syntax validation of security policies to 93% by developing a systematic approach to translating natural language descriptions of security policies by testing the Natural Language Processing performance of multiple LLMs</h3>   
-    </div>
-  </div>
-
-
-  <a>
-    View Full Resume
-  </a>
-
-  <h1>My Projects</h1>
-  <div id="my-projects">
-    <div class="project-card hidden">
-      <h2>NextDex</h2>
-      <img
-        src="img/nextdex.svg"
-        alt="NextDex logo"
-      />
-      <a href="https://github.com/Emorque/NextDex">
-        <img
-         class="arrow"
-         src="img/arrow-up-right.svg"
-         /> 
-      </a>
-      <h3>A Pokédex Application made with NextJS. Pokemon information called from PokeAPI</h3>
-    </div>
+    <br/>
+    <br/>
     
-    <div class="project-card hidden">
-      <h2>SU Social</h2>
-      <img
-        src="img/su_social.png"
-        alt="Syracuse University Social logo"
-      />
-      <a href="https://github.com/Emorque/SU_Social">
-       <img
-        class="arrow"
-        src="img/arrow-up-right.svg"
-        /> 
+    <div class="hidden onetime" style="display: flex; justify-content: center;">
+      <a id="resume" href="https://drive.google.com/file/d/1J7akroLQoKy7Rqr73yBzjcEzHysT0hZc/view?usp=sharing">
+        View Full Resume
+        <span class="rect rect-top"></span>
+        <span class="rect rect-top"></span>
+        <span class="rect rect-bottom"></span>  
+        <span class="rect rect-bottom"></span> 
+        <span class="rect rect-left"></span>
+        <span class="rect rect-right"></span>    
       </a>
-      <h3>Java Based Android Social Media for Syracuse University Students</h3>
     </div>
-  </div>
+    <br/>
+    <br/>
+    <br/>
 
-
-  <h1>Education</h3>
-
-  <section class="college experience hidden">
-    <img
-      src="img/SYRACUSE_BlockS_ORANGE_RGB.png"
-      alt="Syracuse logo"
-      width="15vw"
-    />
-    <div class="exp-text">
-      <h2>Syracuse Unviersity</h2>
-      <h3>Syracuse University College of Engineering and Computer Science</h3>
-      <h4>2020-2024</h4>
-      <h4>Majored with a Bachelor's in Computer Science</h4>
-      <h4>Magna Cum Laude</h4>
-    </div> 
   </section>
 
-  <div id="my-skills">
-    <h1>My Background</h1>
-    <div class="skills hidden">
-      <h2>Languages:</h3>
-      <h2>Python</h2>
-      <h2>Java</h2>
-      <h2>Javascript</h2>
-      <h2>Typescript</h2>
-      <h2>HTML</h2>
-      <h2>CSS</h2>
-    </div>
-    <div class="skills hidden">
-      <h2>Frameworks/Libraries:</h1>
-      <h2>Next.js</h2>
-      <h2>Tailwind CSS</h2>
-      <h2>Pandas</h2>
-      <h2>NumPy</h2>
-    </div>
-    <div class="skills hidden">
-      <h2>Tools:</h1>
-      <h2>GitHub</h2>
-      <h2>GitLab</h2>
-      <h2>Git</h2>
-      <h2>Google Firebase</h2>
-      <h2>Android Studio</h2>
-      <h2>Unity</h2>
-      <h2>Cloudflare</h2>
-      <h2>Restful APIs</h2>
-      <h2>Vercel</h2>
-      <h2>Inkscape</h2>
-      <h2>Figma</h2> 
+  <section class="blackbg" style="background-color: black;">
+    <br/>
+    <h1 class="cen" style="color:#C00F0C">My Projects</h1>
+
+    <div id="my-projects">
+      <div id="art">
+      </div>
+      <div id="nextdex" class="pj">
+        <div class="pj-photo">
+          <img
+          src="img/nextdex.svg"
+          alt="NextDex logo"
+        />
+        </div>
+        <div class="p-info">
+          <div class="p-name">
+            <h2>NextDex</h2>
+            <a href="https://github.com/Emorque/NextDex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+            </a>
+          </div>
+          <h3>A Pokédex Application made with NextJS. Pokemon information called from PokeAPI</h3>
+          <div class="tags" style="display: flex;">
+            <h3>next.js</h2>
+            <h3>Tailwind</h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="susocial" class="pj">
+        <div class="pj-photo">
+          <img
+          src="img/su_social.png"
+          alt="Syracuse University Social logo"
+        />
+        </div>
+        <div class="p-info">
+          <div class="p-name">
+            <h2>SU Social</h2>
+            <a href="https://github.com/Emorque/SU_Social">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+            </a>
+          </div>
+          <h3>Android Social Media for Syracuse University Students</h3>
+          <div class="tags" style="display: flex;">
+            <h3>Java</h3>
+            <h3>Google Firebase</h3>
+            <h3>Android Studio</h3>
+            <h3>desfd</h3>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
+    <br/>
+    <br/>
+  </section>
 
-  <h2>Outside Interests</h2>
-  <div id="gallery-Holder">
-    <div id="gallery" data-mouse-down-at="5" data-prev-percentage="0">
-      <img 
-        class="interactable"
-        src="/img/drawings/1.webp" 
-        alt="First Drawing" 
-        draggable="false"
-      />
-    
-      <img
-        class="interactable" 
-        src="img/drawings/2.webp" 
-        alt="Second Drawing" 
-        draggable="false"
-      />
-    
-      <img
-        class="interactable" 
-        src="img/drawings/3.webp" 
-        alt="Third Drawing" 
-        draggable="false"
-      />
-    
-      <img
-        class="interactable" 
-        src="img/drawings/4.webp" 
-        alt="Fourth Drawing" 
-        draggable="false"
-      />
-    
-      <img
-        class="interactable" 
-        src="img/drawings/5.webp" 
-        alt="Fifth Drawing" 
-        draggable="false"
-      />
-      <img 
-        class="interactable"
-        src="img/drawings/6.webp" 
-        alt="Sixth Drawing" 
-        draggable="false"
-      />
-      <img
-        class="interactable" 
-        src="img/drawings/7.webp" 
-        alt="Seventh Drawing" 
-        draggable="false"
-      />
-      <img 
-        class="interactable"  
-        src="img/drawings/8.webp" 
-        alt="Eighth Drawing" 
-        draggable="false"
-      />
+
+  <section id="toolbelt" class="whitebg">
+      <div id="education" class="hidden college">
+        <div>
+          <h2>Syracuse Unviersity <br> Syracuse, NY</h2>
+          <h3>Major: B.A. in Computer Science <br> Magna Cum Laude</h3>
+        </div>
+      </div> 
+  
+    <div id="languages" class="hidden">
+      <h2 style="color:#C00F0C">Languages</h2>
+      <h2>Python <br> Java<br> Javascript<br> Typescript<br> HTML <br> CSS</h2>
     </div>
-  </div>
+  
+    <div id="frameworks" class="hidden">
+      <h2 style="color:#C00F0C">Frameworks/ <br> Libraries</h1>
+      <h2>Next.js <br> Tailwind CSS <br>Pandas <br>NumPy</h2>
+    </div>
+  
+    <div id="tools" class="hidden">
+      <h2 style="color:#C00F0C">Tools</h1>
+      <h2>GitHub <br> GitLab<br> Git<br> Google Firebase<br> Android Studio<br> Unity<br> Cloudflare<br> Restful APIs<br> Vercel<br> Inkscape<br> Figma</h2>
+    </div>
+  </section>
+  
+  <section class="blackbg" style="background-color: black;"">
+    <br/>
+    <h2> 
+      <span class="red1">Outside Development</span><br>
+      <span class="red2">I love to draw, rock climb, and play video games</span>
+    </h2>
 
-  <h2>Get in Touch</h2>
-  <div id="contactLinks">
-    <a href="https://www.linkedin.com/in/emorque/">
-      <img
-        src="img/logos/linkedin.svg"
-        alt="Link to my LinkedIn"
-        width="50px"
-        height="50px"
-      />
-    </a>
-    <a href="https://github.com/Emorque">
-      <img
-        src="img/logos/github.svg"
-        alt="Link to my GitHub"
-        width="50px"
-        height="50px"
-      />
-    </a>
-    <a href="mailto:ericrodriguez.ecr@gmail.com">
-      <img
-        src="img/logos/envelope-at.svg"
-        alt="Link to my GitHub"
-        width="50px"
-        height="50px"
-      />
-    </a>
-  </div>  
+    <div id="gallery-Holder">
+      <div id="gallery" data-mouse-down-at="5" data-prev-percentage="0">
+        <img 
+          class="interactable"
+          src="/img/drawings/1.webp" 
+          alt="First Drawing" 
+          draggable="false"
+        />
+      
+        <img
+          class="interactable" 
+          src="img/drawings/2.webp" 
+          alt="Second Drawing" 
+          draggable="false"
+        />
+      
+        <img
+          class="interactable" 
+          src="img/drawings/3.webp" 
+          alt="Third Drawing" 
+          draggable="false"
+        />
+      
+        <img
+          class="interactable" 
+          src="img/drawings/4.webp" 
+          alt="Fourth Drawing" 
+          draggable="false"
+        />
+      
+        <img
+          class="interactable" 
+          src="img/drawings/5.webp" 
+          alt="Fifth Drawing" 
+          draggable="false"
+        />
+        <img 
+          class="interactable"
+          src="img/drawings/6.webp" 
+          alt="Sixth Drawing" 
+          draggable="false"
+        />
+        <img
+          class="interactable" 
+          src="img/drawings/7.webp" 
+          alt="Seventh Drawing" 
+          draggable="false"
+        />
+        <img 
+          class="interactable"  
+          src="img/drawings/8.webp" 
+          alt="Eighth Drawing" 
+          draggable="false"
+        />
+      </div>
+    </div>
+    <br/>
+  </section>
+
+  <section id="links-container" class="whitebgVert">
+    <div id="logo">
+      <a href="">
+        <img
+          src="img/logo.svg"
+          width="30" 
+          height="30"
+        />
+      </a>
+    </div>
+    <div id="links">
+      <a href="https://www.linkedin.com/in/emorque/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/Emorque">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg>
+      </a>
+      <a href="mailto:ericrodriguez.ecr@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg>
+      </a>
+    </div>  
+  </section>
+
+    
   <script src="index.js"></script>
 </body>
 

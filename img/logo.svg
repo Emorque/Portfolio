@@ -29,14 +29,14 @@
      inkscape:lockguides="false"
      showgrid="true"
      inkscape:zoom="22.627417"
-     inkscape:cx="12.926796"
-     inkscape:cy="18.362679"
+     inkscape:cx="12.97099"
+     inkscape:cy="18.318485"
      inkscape:window-width="2560"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      inkscape:export-bgcolor="#ffffff00"
      inkscape:clip-to-page="false"
      labelstyle="default">
@@ -77,7 +77,7 @@
      id="layer3"
      inkscape:label="Layer 4"
      transform="translate(-0.023387,-0.03508051)"
-     sodipodi:insensitive="true">
+     style="opacity:1">
     <rect
        style="fill:#000000;fill-opacity:1;stroke-width:1.07896"
        id="rect23-2"
@@ -118,38 +118,37 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2"
-     sodipodi:insensitive="true">
+     inkscape:label="Layer 2">
     <rect
-       style="opacity:1;fill:#ff204e;fill-opacity:1;stroke-width:1.07896"
+       style="opacity:1;fill:#c00f0c;fill-opacity:1;stroke-width:1.07896"
        id="rect23"
        width="6.087501"
        height="0.52906495"
        x="0.527556"
        y="1.0593668" />
     <rect
-       style="opacity:1;fill:#ff204e;fill-opacity:1;stroke-width:1.40995"
+       style="opacity:1;fill:#c00f0c;fill-opacity:1;stroke-width:1.40995"
        id="rect24"
        width="5.9839425"
        height="0.52956653"
        x="1.4316053"
        y="7.1444483" />
     <rect
-       style="opacity:1;fill:#ff204e;fill-opacity:1;stroke-width:0.626247"
+       style="opacity:1;fill:#c00f0c;fill-opacity:1;stroke-width:0.626247"
        id="rect25"
        width="1.0585741"
        height="0.52913839"
        x="7.1445417"
        y="1.0583334" />
     <rect
-       style="opacity:1;fill:#ff204e;fill-opacity:1;stroke-width:0.64144"
+       style="opacity:1;fill:#c00f0c;fill-opacity:1;stroke-width:0.64144"
        id="rect27"
        width="2.6237257"
        height="0.529257"
        x="3.9318864"
        y="3.9683261" />
     <rect
-       style="fill:#ff204e;fill-opacity:1;stroke-width:0.304457"
+       style="fill:#c00f0c;fill-opacity:1;stroke-width:0.304457"
        id="rect1"
        width="6.7668362"
        height="0.52739775"

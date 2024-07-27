@@ -56,10 +56,39 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add('show');
     }
     else {
-      entry.target.classList.remove('show');
+      if (!entry.target.classList.contains('onetime')){
+        entry.target.classList.remove('show');
+      }
     }
   });
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e) => observer.observe(e));
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let iterations = null;
+
+window.onload = () => {
+  const headerText = document.querySelectorAll(".left-text");
+  headerText.forEach((target) => {
+    let iterations = 0;
+  
+    let interval = setInterval(() => {
+      target.innerText = target.innerText
+      .split("")
+      .map((letter, index) => {
+        if (index < iterations){
+          return target.dataset.value[index];
+        }
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+  
+      
+      if (iterations >= target.dataset.value.length) clearInterval(interval);
+  
+    iterations +=1/4;
+    },50);
+  });
+}
