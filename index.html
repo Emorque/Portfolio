@@ -3,14 +3,13 @@
 
 <head>
   <title>Eric Rodriguez</title> <!-- Website Name -->
-  <link rel="icon" href="img/earth.jpg">
+  <link rel="icon" href="img/logo.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="left-container" class="side">
-    <h2  data-value="Eric Rodriguez" class="left-text">Eric Rodriguez</h2>
-    <h2  data-value="Software Engineer" class="left-text">Software Engineer</h2>
+    <h2  data-value="ERIC RODRIGUEZ" class="left-text">ERIC RODRIGUEZ</h2>
   </div>
   <div id="pattern-container" class="side">
     <div id="pattern"></div>
@@ -24,13 +23,24 @@
         height="384px"
         alt="Portrait of Eric"
       />
-      <h2>Based in New York City. <br> I love to make new projects and learn new technologies</h2>
+      <h2>
+        <span style="color: #e1120e">Software Engineer</span><br> 
+        based in New York City. <br> 
+        I love to make new projects and learn new technologies
+      </h2>
     </div>  
   </section>
   
   <section class="whitebg">
     <br/>
-    <h1 class="cen" style="color:white">Work Experience</h1>
+    <!-- <h1 class="cen" style="color:black">Work Experience</h1> -->
+    <div id="experience">
+      <div style="display: flex;">
+        <h2>EXP</h2>
+        <h2 id="question-mark" style="padding-left: 50%; opacity: 0;;">???</h2>
+      </div>
+      <div id="exp-bar"></div>
+    </div>
     <div id="work-exp">
       <div id="work-time">
         <h1>Sep 2023 - Present</h1>
@@ -79,11 +89,9 @@
 
   <section class="blackbg" style="background-color: black;">
     <br/>
-    <h1 class="cen" style="color:#C00F0C">My Projects</h1>
+    <h1 class="cen red1">My Projects</h1>
 
     <div id="my-projects">
-      <div id="art">
-      </div>
       <div id="nextdex" class="pj">
         <div class="pj-photo">
           <img
@@ -95,12 +103,12 @@
           <div class="p-name">
             <h2>NextDex</h2>
             <a href="https://github.com/Emorque/NextDex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
               </svg>
             </a>
           </div>
-          <h3>A Pokédex Application made with NextJS. Pokemon information called from PokeAPI</h3>
+          <h3>A Pokédex Web Application with Pokémon information from PokeAPI</h3>
           <div class="tags" style="display: flex;">
             <h3>next.js</h2>
             <h3>Tailwind</h2>
@@ -119,17 +127,16 @@
           <div class="p-name">
             <h2>SU Social</h2>
             <a href="https://github.com/Emorque/SU_Social">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
               </svg>
             </a>
           </div>
-          <h3>Android Social Media for Syracuse University Students</h3>
+          <h3>An Android Social Media App for Syracuse University Students</h3>
           <div class="tags" style="display: flex;">
             <h3>Java</h3>
             <h3>Google Firebase</h3>
             <h3>Android Studio</h3>
-            <h3>desfd</h3>
           </div>
         </div>
       </div>
@@ -167,8 +174,8 @@
   <section class="blackbg" style="background-color: black;"">
     <br/>
     <h2> 
-      <span class="red1">Outside Development</span><br>
-      <span class="red2">I love to draw, rock climb, and play video games</span>
+      <span class="red1">Outside of Development</span><br>
+      <span class="red2">I love to draw, go rock climbing, and play video games</span>
     </h2>
 
     <div id="gallery-Holder">
@@ -258,8 +265,6 @@
       </a>
     </div>  
   </section>
-
-    
   <script src="index.js"></script>
 </body>
 

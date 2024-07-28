@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
   --primary: #C00F0C;
   --primary2: #e1120e;  
-  --secondary: #3F3FB4;
-  --teritary: #173B45;
   --b: #000000;
   --w: #FFFFFF;
-  --g: #f3f3f3;
+  --g: #f4f4f4;
   --syracuse: #f76801;
 }
 
@@ -18,7 +15,7 @@ body {
   width: 100vw;
   background-color: white;
   color: black;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif; 
   margin: 0rem;
   overflow-x: hidden;
   overflow-y:auto;
@@ -29,9 +26,7 @@ body {
   height: 56vmin;
   object-fit: cover;
   object-position: center;
-  filter: drop-shadow(0 0 0.15rem white);
-  /* border: solid var(--primary); */
-  /* border-color: linear-gradient(var(--primary), var(--secondary)); */
+  filter: drop-shadow(0 0 0.25rem white);
   border-width: 1vw;
 }
 
@@ -40,6 +35,14 @@ body {
   gap: 4vmin;
   transform: translate(0%, 0%);
   user-select: none;
+}
+
+.interactable {
+  transition: tranform 10s ease-in-out;
+}
+
+.interactable:hover {
+  transform: scale(1.01);
 }
 
 .side {
@@ -64,10 +67,10 @@ body {
 
 .left-text{
   font-family: "Montserrat", sans-serif;
-  font-size: 7vw;
-  font-weight: 8vw;
+  font-size: 5rem;
+  font-weight: 600;
   margin: 0px 15vw;
-  width: 70vw;
+  width: 80vw;
   text-align: center;
   color:white;
 }
@@ -121,8 +124,8 @@ body {
 }
 
 #bio > * {
-  width: 25vw;   /* Set the width you want */
-  height: auto;  /* Set the height you want */
+  width: 25vw;  
+  height: auto;  
 }
 
 #bio h2 {
@@ -131,7 +134,7 @@ body {
   padding-left: 10vw;
   border-left-width: 1vw;
   border-left: solid var(--primary);
-  color: var(--primary);
+  color:white
 }
 
 .hidden {
@@ -164,37 +167,11 @@ body {
   width: 100%;
   display: grid;
   grid-template-areas: 
-    "a nd"
-    "a su";
+    "nd su";
 
   grid-template-columns: 1fr 1fr;
 }
 
-/* #artND {
-  grid-area: a1;
-  background-image: url("img/headerPattern.svg");
-  background-repeat: repeat;
-  background-color: var(--primary);
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 100px;
-  opacity: 80%;
-}
-
-#artSU {
-  grid-area: a2;
-  background-image: url("img/headerPattern.svg");
-  background-repeat: repeat;
-  background-color: var(--primary);
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 100px;
-  opacity: 80%;
-} */
-
-#art {grid-row: a;}
 #nextdex {grid-area: nd;}
 #susocial {grid-area: su;}
 
@@ -203,9 +180,11 @@ body {
   /* margin: 10px; */
   border-radius: 10px;
   display: flex;
-  margin-top: 10px;
+  /* margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 100px;
+  margin-right: 100px; */
+  margin-left: 5vw;
+  margin-right: 5vw;
   opacity: 80%;
 }
 
@@ -229,46 +208,62 @@ body {
 
 .p-name a svg {
   padding-left: 10px;
-  /* padding-top: 3px; */
-  width: 20px;
-  height: 20px;
-  transition: transform 0.5s ease;
+  padding-top: 15px;
+  width: 25px;
+  height: 25px;
 
 }
 .p-name a {
   text-decoration: none;
   color: inherit;
+  transition: transform 0.5s ease;
 }
 
 .pj:hover {
   cursor: pointer;
 }
 
-.pj:hover .p-info .p-name svg{
-  transform: translateX(10px);
+.p-name a:hover {
+  transform: translate(8px, -8px);
+  color: white;
 } 
+
+/* 
+.p-name a:hover ~ .p-name h2{
+  color: white;
+}  */
 
 .p-info h2 {
   margin: 0;
   padding: 0;
-  padding-top: 1px;
+  padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .p-info h3 {
   margin: 0;
   padding: 0;
+  padding-bottom: 5%;
+  color: white;
+  font-size: 1rem;
 }
 
 .tags {
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 5%;
 }
 
 .tags h3 {
-  border-radius: 10px;
-  padding: 10px;
-  background-color: white;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: var(--primary2);
+  font-size: 0.75rem;
+
 }
 
 #work-exp {
@@ -328,17 +323,6 @@ body {
   padding-right: 1vw;
 }
 
-
-#contactLinks a {
-  text-decoration: none;
-  color: inherit;
-  padding-left: 1vw;
-}
-
-#contactLinks a:hover img{
-  fill: #173B45;
-}
-
 #resume {
   display: inline-block;
   border-radius: 10px;
@@ -359,7 +343,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(0.99); /* Slightly smaller */
+    transform: scale(0.99);
   }
   100% {
     transform: scale(1);
@@ -448,12 +432,14 @@ body {
 }
 
 .red1{
-  color: var(--primary);
+  color: var(--primary2);
+  /* color: white; */
   padding-left: 1vw;
 }
 
 .red2{
-  color: var(--primary2);
+  /* color: var(--primary2); */
+  color: white;
   padding-left: 1vw;
 }
 
@@ -465,27 +451,39 @@ body {
   flex: 9;
 }
 
+#links-container{
+  display: flex;
+  padding: 1vw;
+}
+
 #links a {
   text-decoration: none;
   color: inherit;
 }
 
+#links svg{
+  padding-bottom: 2vh;
+  padding-top: 1vh;
+  transition: transform 0.5s ease;
+}
+
 #links svg:hover{
   fill:var(--primary);
   cursor: pointer;
+  transform: translateY(-5px);
 }
 
-#links-container{
-  padding-top: 2vh;
-  display: flex;
-  height: 5vh;
-}
-
-#logo {
+#logo img{
   flex: 1;
   display: flex;
   justify-content: left;
-  padding-left: 1vw;
+  padding-top: 1vh;
+  padding-left: 2vw;
+  transition: transform 0.5s ease;
+}
+
+#logo img:hover {
+  transform: translateY(-5px);
 }
 
 @media(prefers-reduced-motion) {
@@ -503,12 +501,10 @@ body {
     grid-template-columns: 1fr;
   }
 
-  #art{
-    display: none;
-  }
-
   .pj{
     margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   
   #toolbelt {
@@ -539,7 +535,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 15%;
+    padding-left: 20%;
     text-align: left;
     gap: 10vw;
   }
@@ -561,6 +557,18 @@ body {
   }
   /* #frameworks {grid-area: fw;}
   #tools {grid-area: ts;} */
+
+  .left-text{
+    font-size: 4rem;
+    font-weight: 500;
+    width: 70vw;
+    text-align: left;
+  }
+  
+  #bio h2 {
+    font-size:1rem; 
+  }
+  
 }
 
 @media (min-width: 1800px) {
@@ -574,4 +582,26 @@ body {
     margin-left: 10vw;
     margin-right: 10vw;
   }
+}
+
+#exp-bar {
+  content: "";
+  height: 20px;
+  width: 1vw;
+  /* background-color: var(--primary);  */
+  background: linear-gradient(to right, var(--primary), #00000000);
+}
+
+#experience {
+  margin-left: 10vw;
+}
+
+#experience h2 {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+#question-mark {
+  transition: all 1s;
 }

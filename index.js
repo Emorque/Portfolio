@@ -21,12 +21,10 @@ const handleOnMove = e => {
 
   gallery.dataset.percentage = nextPercentage;
   
-  // gallery.dataset.percentage = nextPercentage;
   gallery.animate({
     transform: `translate(${nextPercentage}%, 0%)`
   }, { duration: 1200, fill: "forwards"});
 
-  // gallery.style.transform = `translate(${nextPercentage}%, 0%)`;
 }
 
 
@@ -42,13 +40,6 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-// const handleMove = e => {
-//   leftSide.style.width = `${e.clientX / window.innerWidth * 100}%`;
-// }
-
-// document.onmousemove = e => handleMove(e);
-
-// document.ontouchmove = e => handleMove(e.touches[0]);
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -70,25 +61,49 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let iterations = null;
 
 window.onload = () => {
-  const headerText = document.querySelectorAll(".left-text");
-  headerText.forEach((target) => {
+  const headerText = document.querySelector(".left-text");
     let iterations = 0;
   
     let interval = setInterval(() => {
-      target.innerText = target.innerText
+      headerText.innerText = headerText.innerText
       .split("")
       .map((letter, index) => {
         if (index < iterations){
-          return target.dataset.value[index];
+          return headerText.dataset.value[index];
         }
         return letters[Math.floor(Math.random() * 26)]
       })
       .join("");
   
       
-      if (iterations >= target.dataset.value.length) clearInterval(interval);
+      if (iterations >= headerText.dataset.value.length) clearInterval(interval);
   
     iterations +=1/4;
     },50);
+}
+
+const experienceBar = document.getElementById("exp-bar");
+const qmark = document.getElementById("question-mark");
+
+const findBar = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      move();
+      findBar.unobserve(experienceBar);
+    }
   });
+});
+
+findBar.observe(experienceBar);
+
+function move() {
+  let width = 1;
+  let interval = setInterval(() => {
+    if (width >= 50) {
+      qmark.style.opacity = 1;
+      clearInterval(interval);
+    }
+    width++;
+    experienceBar.style.width = width + "%";
+  },50);
 }
