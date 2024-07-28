@@ -1,3 +1,4 @@
+// Handling the gallery container 
 const gallery = document.getElementById("gallery");
 const leftSide = document.getElementById("left-container");
 
@@ -27,17 +28,11 @@ const handleOnMove = e => {
 
 }
 
-
 window.onmousedown = e => handleOnDown(e);
-
 window.ontouchstart = e => handleOnDown(e.touches[0]);
-
 window.onmouseup = e => handleOnUp(e);
-
 window.ontouchend = e => handleOnUp(e.touches[0]);
-
 window.onmousemove = e => handleOnMove(e);
-
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
@@ -57,6 +52,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e) => observer.observe(e));
 
+//Handling hero animation 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let iterations = null;
 
@@ -74,7 +70,6 @@ window.onload = () => {
         return letters[Math.floor(Math.random() * 26)]
       })
       .join("");
-  
       
       if (iterations >= headerText.dataset.value.length) clearInterval(interval);
   
@@ -82,6 +77,7 @@ window.onload = () => {
     },50);
 }
 
+// Handling experience bar animation 
 const experienceBar = document.getElementById("exp-bar");
 const qmark = document.getElementById("question-mark");
 

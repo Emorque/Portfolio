@@ -21,6 +21,7 @@ body {
   overflow-y:auto;
 }
 
+/* Each of the drawings */
 #gallery > .interactable {
   width: 40vmin;
   height: 56vmin;
@@ -30,6 +31,7 @@ body {
   border-width: 1vw;
 }
 
+/* Container for the drawings */
 #gallery{
   display: flex;
   gap: 4vmin;
@@ -37,6 +39,7 @@ body {
   user-select: none;
 }
 
+/* Covers the scaling animation */
 .interactable {
   transition: tranform 10s ease-in-out;
 }
@@ -45,6 +48,7 @@ body {
   transform: scale(1.01);
 }
 
+/* The hero section */
 .side {
   height: 100vh;
   width: 100vw;
@@ -56,7 +60,7 @@ body {
   overflow: hidden;
 }
 
-
+/* Container for my Name */
 #left-container{
   display: flex;
   flex-direction: column;
@@ -74,15 +78,8 @@ body {
   text-align: center;
   color:white;
 }
-/* @keyframes pan {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-} */
 
+/* Container that repeats the pattern */
 #pattern-container{
   background-color: var(--primary);
   overflow: hidden;
@@ -102,15 +99,9 @@ body {
   width: 100%; 
   min-height: 100%;
   min-width: 100%;
-
-  /* animation: pan 100s linear infinite;
-  will-change: background-position; */
 }
 
-#left-container #pattern {
-  opacity: 10%;
-}
-
+/* Container for the biography */
 #bio{
   display: flex;
   justify-content: space-evenly;
@@ -123,6 +114,7 @@ body {
   text-align: center;
 }
 
+/* Each child element is set to 25vw*/
 #bio > * {
   width: 25vw;  
   height: auto;  
@@ -137,6 +129,7 @@ body {
   color:white
 }
 
+/* Class for sliding from left animation */
 .hidden {
   filter: blur(5px);
   transform: translateX(-100%);
@@ -145,10 +138,11 @@ body {
 
 .hidden.college {
   filter: blur(5px);
-  transform: translateX(0);
+  transform: translateX(0); /*Removed Sliding animation */
   transition: all 1s;
 }
 
+/* Class that gets added for the animation */
 .show {
   filter: blur(0);
   transform: translateX(0);
@@ -157,12 +151,13 @@ body {
 .show.college{
   filter: blur(0);
 }
-
+/* 
 .col {
   display: flex;
   flex-direction: column;
-}
+} */
 
+/* Grid container for projects */
 #my-projects {
   width: 100%;
   display: grid;
@@ -175,19 +170,17 @@ body {
 #nextdex {grid-area: nd;}
 #susocial {grid-area: su;}
 
+/* Class for the projects */
 .pj {
   background-color: var(--primary);
-  /* margin: 10px; */
   border-radius: 10px;
   display: flex;
-  /* margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 100px; */
   margin-left: 5vw;
   margin-right: 5vw;
   opacity: 80%;
 }
 
+/* Increases opacity when project card is hovered */
 .pj:hover {
   opacity: 100%;
 }
@@ -196,6 +189,7 @@ body {
   display: inline-block;
 }
 
+/* Project image styling */
 .pj-photo img {
   width: 150px;
   height: 150px;
@@ -206,6 +200,7 @@ body {
   align-items: center;
 }
 
+/* Styling for the arrow in the project card */
 .p-name a svg {
   padding-left: 10px;
   padding-top: 15px;
@@ -219,6 +214,7 @@ body {
   transition: transform 0.5s ease;
 }
 
+/* Handles animation for the arrow when hovered */
 .pj:hover {
   cursor: pointer;
 }
@@ -228,11 +224,7 @@ body {
   color: white;
 } 
 
-/* 
-.p-name a:hover ~ .p-name h2{
-  color: white;
-}  */
-
+/* h styling for the project card */
 .p-info h2 {
   margin: 0;
   padding: 0;
@@ -249,12 +241,14 @@ body {
   font-size: 1rem;
 }
 
+/* Styling for the container that holds the tech tags in the project cards */
 .tags {
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 5%;
 }
 
+/* Styling for the h3 in tags */
 .tags h3 {
   border-radius: 20px;
   padding-bottom: 5px;
@@ -266,6 +260,7 @@ body {
 
 }
 
+/* Container for the work experiences */
 #work-exp {
   display: flex;
   align-items: center;
@@ -273,10 +268,10 @@ body {
   padding-right: 5vw
 }
 
-#work-exp h1 {
+/* #work-exp h1 {
   font-size:1rem; 
   font-weight: 700;
-}
+} */
 
 #work-exp a {
   text-decoration: none;
@@ -294,35 +289,23 @@ body {
 }
 
 #work-time {
-  width: 20vw;
+  width: 20vw; /* The date gets 20 percent */
 }
 
 #work-content {
   border-left-width: 1vh;
   border-left: solid var(--primary);
   padding-left: 1vw;
-  width: 80vw;
+  width: 80vw; /* The content gets 80 percent */
 }
 
+/* Generic class for divs that want center styling */
 .cen {
   text-align: center;
   align-items: center;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0;
-  padding-left: 1vw;
-  margin: 0;
-}
-
-.skills h2 {
-  display: inline-block;
-  padding-right: 1vw;
-}
-
+/* Container for the resume button */
 #resume {
   display: inline-block;
   border-radius: 10px;
@@ -334,6 +317,7 @@ body {
   position: relative;
 }
 
+/* Pulsing animation for when the resume button is hovered */
 #resume:hover {
   animation: pulse 0.75s infinite;
 }
@@ -350,6 +334,7 @@ body {
   }
 }
 
+/* rect class for adding rectangles coming out of the button */
 .rect {
   position: absolute;
   left: 50%;
@@ -399,6 +384,7 @@ body {
   left: 108%;
 }  
 
+/* Grid container that contains education and my skills */
 #toolbelt {
   width: 100%;
   display: grid;
@@ -408,6 +394,7 @@ body {
   grid-template-columns: 2fr 1fr 1fr 1fr;
 }
 
+/* Set education Styling */
 #education { 
   display: flex;
   flex-direction: column;
@@ -421,28 +408,29 @@ body {
 #frameworks {grid-area: fw;}
 #tools {grid-area: ts;}
 
+/* Styling for divs that need a white bg */
 .whitebg{
-  /* background: linear-gradient(to bottom right, white 0%, white 50%, var(--primary) 50%,var(--primary) 100%); */
   background: linear-gradient(to bottom right, white 0%, white 50%, var(--g) 50%, var(--g) 100%);
 }
 
+/* Different styling for a white bg (line is down the middle rather than from bottom left to to right */
 .whitebgVert{
-  /* background: linear-gradient(to bottom right, white 0%, white 50%, var(--primary) 50%,var(--primary) 100%); */
   background: linear-gradient(to right, white 0%, white 50%, var(--g) 50%, var(--g) 100%);
 }
 
-.red1{
+/* Styling for text that need to be color: primary2 */
+.red2{
   color: var(--primary2);
-  /* color: white; */
   padding-left: 1vw;
 }
 
-.red2{
-  /* color: var(--primary2); */
+/* Styling for text that need to be color: white */
+.wh{
   color: white;
   padding-left: 1vw;
 }
 
+/* Foot Container that houses links */
 #links {
   display: flex;
   justify-content: right;
@@ -461,6 +449,7 @@ body {
   color: inherit;
 }
 
+/* Added animation for svgs: a slight Y increase when hovered */
 #links svg{
   padding-bottom: 2vh;
   padding-top: 1vh;
@@ -473,6 +462,7 @@ body {
   transform: translateY(-5px);
 }
 
+/* Added animation for logo img: a slight Y increase when hovered */
 #logo img{
   flex: 1;
   display: flex;
@@ -486,12 +476,14 @@ body {
   transform: translateY(-5px);
 }
 
+/* If the user doesn't want animations, removes animations */
 @media(prefers-reduced-motion) {
   .hidden{
     transition: none;
   }
 }
 
+/* Styling for smaller sized screens */
 @media (max-width: 800px) {
   #my-projects {
     grid-template-areas: 
@@ -555,8 +547,6 @@ body {
     text-align: left;
     gap: 10vw;
   }
-  /* #frameworks {grid-area: fw;}
-  #tools {grid-area: ts;} */
 
   .left-text{
     font-size: 4rem;
@@ -568,9 +558,9 @@ body {
   #bio h2 {
     font-size:1rem; 
   }
-  
 }
 
+/* Styling for larger screens */
 @media (min-width: 1800px) {
   #my-projects {
     grid-template-areas: 
@@ -584,11 +574,11 @@ body {
   }
 }
 
+/*Styling for the experience bar */
 #exp-bar {
   content: "";
   height: 20px;
   width: 1vw;
-  /* background-color: var(--primary);  */
   background: linear-gradient(to right, var(--primary), #00000000);
 }
 
@@ -602,6 +592,7 @@ body {
   font-style: italic;
 }
 
+/* Animation for the question mark to appear at end of animation */
 #question-mark {
   transition: all 1s;
 }
