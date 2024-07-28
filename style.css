@@ -137,9 +137,9 @@ body {
 }
 
 .hidden.college {
-  filter: blur(5px);
+  filter: blur(15px);
   transform: translateX(0); /*Removed Sliding animation */
-  transition: all 1s;
+  transition: all 2s;
 }
 
 /* Class that gets added for the animation */
@@ -162,21 +162,27 @@ body {
   width: 100%;
   display: grid;
   grid-template-areas: 
-    "nd su";
+    /* "nd su"; */
+    "nd su"
+    "web mm";
 
   grid-template-columns: 1fr 1fr;
 }
 
 #nextdex {grid-area: nd;}
 #susocial {grid-area: su;}
+#website {grid-area: web;}
+#monstermon {grid-area: mm;}
 
 /* Class for the projects */
 .pj {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background: linear-gradient(var(--primary), var(--primary2));
   border-radius: 10px;
   display: flex;
   margin-left: 5vw;
   margin-right: 5vw;
+  margin-bottom: 5vh;
   opacity: 80%;
 }
 
@@ -224,6 +230,11 @@ body {
   color: white;
 } 
 
+.p-info {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
 /* h styling for the project card */
 .p-info h2 {
   margin: 0;
@@ -255,7 +266,7 @@ body {
   padding-top: 5px;
   padding-right: 10px;
   padding-left: 10px;
-  background-color: var(--primary2);
+  background-color: var(--primary);
   font-size: 0.75rem;
 
 }
@@ -467,7 +478,7 @@ body {
   flex: 1;
   display: flex;
   justify-content: left;
-  padding-top: 1vh;
+  /* padding-top: 1vh; */
   padding-left: 2vw;
   transition: transform 0.5s ease;
 }
@@ -488,7 +499,9 @@ body {
   #my-projects {
     grid-template-areas: 
       "nd"
-      "su";
+      "su"
+      "web"
+      "mm";
 
     grid-template-columns: 1fr;
   }
@@ -564,13 +577,13 @@ body {
 @media (min-width: 1800px) {
   #my-projects {
     grid-template-areas: 
-      "nd su";
+      "nd su web mm";
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .pj {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 }
 
