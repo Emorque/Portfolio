@@ -310,6 +310,10 @@ body {
   width: 80vw; /* The content gets 80 percent */
 }
 
+#work-content a:hover{
+  color: var(--primary)
+}
+
 /* Generic class for divs that want center styling */
 .cen {
   text-align: center;
@@ -563,9 +567,14 @@ body {
 
   .left-text{
     font-size: 4rem;
-    font-weight: 500;
-    width: 70vw;
-    text-align: left;
+    font-weight: 600;
+    width: 80vw;
+    /* font-size: 5rem;
+    font-weight: 600;
+    margin: 0px 15vw;
+    width: 80vw;
+    text-align: center;
+    color:white; */
   }
   
   #bio h2 {
