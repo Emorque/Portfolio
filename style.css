@@ -37,6 +37,7 @@ body {
   gap: 4vmin;
   transform: translate(0%, 0%);
   user-select: none;
+  width: 100vw;
 }
 
 /* Covers the scaling animation */
@@ -536,7 +537,7 @@ body {
     grid-area: edu;
     color: var(--syracuse);
     align-items: center;
-    padding-left: 20%;
+    padding-left: 35%;
     text-align: center;
   }
   
@@ -544,7 +545,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 20%;
+    padding-left: 25%;
     text-align: left;
     gap: 10vw;
   }
@@ -552,7 +553,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 10%;
+    padding-left: 15%;
     text-align: left;
     gap: 10vw;
   }
@@ -560,7 +561,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 10%;
     text-align: left;
     gap: 10vw;
   }
@@ -609,6 +610,9 @@ body {
   }
 
   #toolbelt {
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
     grid-template-areas: 
       "edu" 
       "lang"
@@ -633,9 +637,21 @@ body {
   h3 {
     font-size: 1rem;
   }
+
+  .p-info{
+    padding: 0px;
+  }
   
   #bio > * {
     width: 80vw;
+  }
+
+  #gallery-Holder {
+    display: none;
+  }
+
+  .rect-top {
+    top: -70%; 
   }
 }
 
