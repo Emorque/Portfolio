@@ -582,6 +582,64 @@ body {
   }
 }
 
+/* Styling for phone screens */
+@media (max-width: 600px) {
+  #my-projects {
+    grid-template-areas: 
+      "nd"
+      "su"
+      "web"
+      "mm";
+
+    grid-template-columns: 1fr;
+  }
+
+  #bio{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #bio h2{
+    border-left: 0;
+    padding: 0;
+  }
+
+  .pj {
+    margin: 10px;
+  }
+
+  #toolbelt {
+    grid-template-areas: 
+      "edu" 
+      "lang"
+      "fw" 
+      "ts";
+
+    grid-template-columns: 1fr;
+  }
+
+  #education, #languages, #frameworks, #tools {
+    text-align: center;
+  }
+
+  .left-text {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+  
+  #bio > * {
+    width: 80vw;
+  }
+}
+
+
 /* Styling for larger screens */
 @media (min-width: 1800px) {
   #my-projects {
