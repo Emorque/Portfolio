@@ -297,8 +297,8 @@ body {
 #work-exp {
   display: flex;
   align-items: center;
-  padding-left: 5vw;
-  padding-right: 5vw
+  padding-left: 10vw;
+  padding-right: 10vw
 }
 
 /* #work-exp h1 {
@@ -333,7 +333,7 @@ body {
 }
 
 #work-content a:hover{
-  color: var(--primary)
+  color: var(--primary);
 }
 
 /* Generic class for divs that want center styling */
@@ -356,7 +356,7 @@ body {
 
 /* Pulsing animation for when the resume button is hovered */
 #resume:hover {
-  animation: pulse 0.75s infinite;
+  animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
@@ -511,6 +511,10 @@ body {
 
 #logo img:hover {
   transform: translateY(-5px);
+}
+
+#drawText2{
+  display:none;
 }
 
 /* If the user doesn't want animations, removes animations */
@@ -674,6 +678,18 @@ body {
   .rect-top {
     top: -70%; 
   }
+    /* Container for the work experiences */
+  #work-exp {
+    padding-left: 5vw;
+    padding-right: 5vw
+  }
+
+  #drawText1{
+    display: none;
+  }
+  #drawText2{
+    display: block;
+  }
 }
 
 
@@ -712,4 +728,14 @@ body {
 /* Animation for the question mark to appear at end of animation */
 #question-mark {
   transition: all 1s;
+}
+
+#rock:hover{
+  color: grey;
+  cursor: url("img/rock.png"), auto;
+}
+
+#draw:hover{
+  color: #ddce22;
+  cursor: url("img/pencil.png"), auto;
 }
