@@ -51,7 +51,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e) => observer.observe(e));
-
+/*
 //Handling hero animation 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let iterations = null;
@@ -76,6 +76,14 @@ window.onload = () => {
     iterations +=1/4;
     },50);
 }
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.querySelector('.left-text').classList.add('loaded');
+  }, 500); // 100ms delay
+});
+
 
 // Handling experience bar animation 
 const experienceBar = document.getElementById("exp-bar");

@@ -78,7 +78,14 @@ body {
   width: 80vw;
   text-align: center;
   color:white;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
+
+.left-text.loaded {
+  opacity: 1;
+}
+
 
 /* Container that repeats the pattern */
 #pattern-container{
@@ -140,7 +147,7 @@ body {
 .hidden.college {
   filter: blur(15px);
   transform: translateX(0); /*Removed Sliding animation */
-  transition: all 2s;
+  transition: all 1s;
 }
 
 /* Class that gets added for the animation */
@@ -175,6 +182,10 @@ body {
 #website {grid-area: web;}
 #monstermon {grid-area: mm;}
 
+#my-projects a {
+  text-decoration: none;
+}
+
 /* Class for the projects */
 .pj {
   /* background-color: var(--primary); */
@@ -190,6 +201,16 @@ body {
 /* Increases opacity when project card is hovered */
 .pj:hover {
   opacity: 100%;
+  svg{
+    transform: translate(8px, -8px);
+    color: white;
+  }
+}
+
+.pj svg{
+  text-decoration: none;
+  color: white;
+  transition: transform 0.5s ease;
 }
 
 .pj-photo {
@@ -205,31 +226,31 @@ body {
 .p-name {
   display: flex;
   align-items: center;
+  color: black;
 }
 
 /* Styling for the arrow in the project card */
-.p-name a svg {
+.p-name svg {
   padding-left: 10px;
   padding-top: 15px;
   width: 25px;
   height: 25px;
-
 }
-.p-name a {
+/* .p-name a {
   text-decoration: none;
   color: inherit;
   transition: transform 0.5s ease;
-}
+} */
 
 /* Handles animation for the arrow when hovered */
-.pj:hover {
+/* .pj:hover {
   cursor: pointer;
 }
 
 .p-name a:hover {
   transform: translate(8px, -8px);
   color: white;
-} 
+}  */
 
 .p-info {
   padding-left: 1vw;
