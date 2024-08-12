@@ -51,32 +51,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e) => observer.observe(e));
-/*
-//Handling hero animation 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let iterations = null;
-
-window.onload = () => {
-  const headerText = document.querySelector(".left-text");
-    let iterations = 0;
-  
-    let interval = setInterval(() => {
-      headerText.innerText = headerText.innerText
-      .split("")
-      .map((letter, index) => {
-        if (index < iterations){
-          return headerText.dataset.value[index];
-        }
-        return letters[Math.floor(Math.random() * 26)]
-      })
-      .join("");
-      
-      if (iterations >= headerText.dataset.value.length) clearInterval(interval);
-  
-    iterations +=1/4;
-    },50);
-}
-*/
 
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
