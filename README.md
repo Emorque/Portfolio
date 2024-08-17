@@ -26,3 +26,6 @@ If by chance you'd like to try to run the website on your local system:
 npx serve
 ```
 4. Or run index.html in your browser
+
+## Figma
+The Figma File can be accessed [here](https://www.figma.com/design/MJedN7Vrf84MPy7bwpYURr/Personal-Website?node-id=0-1&t=eRz7RU8JLecqF7Hk-0)
