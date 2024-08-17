@@ -22,6 +22,11 @@
   box-sizing: inherit;
 }*/
 
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -29,8 +34,6 @@ body {
   color: black;
   font-family: Space Grotesk, sans-serif; 
   margin: 0rem;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 /* Each of the drawings */
@@ -603,7 +606,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }
 
