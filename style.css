@@ -3,8 +3,8 @@
 :root {
   --primary: #C00F0C;
   --primary2: #e1120e;  
-  --b: #000000;
-  --w: #FFFFFF;
+  --b: #000;
+  --w: #FFF;
   --g: #f4f4f4;
   --syracuse: #f76801;
 }
@@ -176,11 +176,85 @@ body {
 .show.college{
   filter: blur(0);
 }
-/* 
-.col {
+
+/* Grid container for websites */
+#my-projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#my-websites {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Class for the projects */
+.website {
+  /* background-color: var(--primary); */
+  /* background: linear-gradient(var(--primary), var(--primary2)); */
+  border-radius: 10px;
+  display: flex;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+  opacity: .80;
+  transition: opactity 1s ease;
+  color: var(--w);
+  text-align: left;
+}
+
+.website:hover {
+  opacity: 1;
+}
+
+/* .web-photo {
+  display: inline-block;
+  margin: 0 auto;
+} */
+
+.web-photo img {
+  height: 360px;
+  width: 640px;
+  border: 4px solid var(--primary);
+}
+
+.web-info {
+  padding-left: 1vw;
+  padding-right: 1vw;
   display: flex;
   flex-direction: column;
-} */
+}
+
+.caption, .web-link svg {
+  font-size: 1rem;
+  color: var(--w);
+  fill: var(--w);
+}
+
+.web-link h3 {
+  color: var(--primary2);
+}
+
+.web-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.web-link a {
+  display: flex;
+  align-items: center;
+  svg {
+    transition: transform 0.5s ease;
+  }
+}
+
+.web-link a:hover {
+  svg {
+    transform: translate(8px, -8px);
+  }
+}
 
 /* Grid container for projects */
 #my-projects {
@@ -199,7 +273,7 @@ body {
 #website {grid-area: web;}
 #monstermon {grid-area: mm;}
 
-#my-projects a {
+#my-projects a, .web-link a {
   text-decoration: none;
 }
 
@@ -524,8 +598,23 @@ body {
   }
 }
 
+@media (max-width: 940px){
+  .website {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
 /* Styling for smaller sized screens */
 @media (max-width: 800px) {
+  .web-photo img {
+    height: 180px;
+    width: 320px;
+    border: 4px solid var(--primary);
+  }
+
   #my-projects {
     grid-template-areas: 
       "nd"
