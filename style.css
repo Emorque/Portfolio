@@ -803,6 +803,18 @@ body {
   }
 }
 
+@media only screen and (max-height: 450px) and (max-width: 940px) {
+  #gallery-Holder {
+    display: none;
+  }  
+  #drawText1{
+    display: none;
+  }
+  #drawText2{
+    display: block;
+  }
+}
+
 /*Styling for the experience bar */
 #exp-bar {
   content: "";
