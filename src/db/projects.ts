@@ -24,7 +24,7 @@ export const main_projects : project[] = [
     {
         name: "Octopath Traveler UI",
         video: "https://2rhmsj9j95.ufs.sh/f/fgk4iGRrXmkVXzMYftitSCoAZGYKFak2w5pOy4lbDuhvcr3W",
-        stack: ["HTML", "CSS", "JS"],
+        stack: ["HTML", "CSS", "JavaScript"],
         oneliner: "Remaking OT's UI",
         github: "https://github.com/Emorque/Octopath-Traveler-UI",
         link: "https://emorque.github.io/Octopath-Traveler-UI/",

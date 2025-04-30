@@ -101,6 +101,14 @@ a {
   text-decoration: none;
 }
 
+.colored_link{
+  color: var(--red);
+  transition: color 250ms ease;
+}
+
+.colored_link:hover {
+  color: var(--redAccent)
+}
 
 
 .main_project {

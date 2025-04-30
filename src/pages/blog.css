@@ -29,12 +29,12 @@
 }
 
 #blog_content a {
-    color: var(--redAccent);
+    color: var(--red);
     transition: color 250ms ease;
 }
 
 #blog_content a:hover {
-    color: var(--red);
+    color: var(--redAccent);
 }
 
 span {

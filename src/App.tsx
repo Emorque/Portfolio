@@ -11,6 +11,7 @@ function App() {
         <h1>Eric Rodriguez</h1>
         <br/>
         <h2>Hey! I'm Eric, a Developer based in New York City, specializing in React & Typescript.</h2>
+        <h2>You can check out <a className='colored_link' href='https://drive.google.com/file/d/1J7akroLQoKy7Rqr73yBzjcEzHysT0hZc/view'>my resume</a></h2>
         <h2>I'm also familar with:</h2>
         <div className='stack'>
           <p>Next.js</p>
