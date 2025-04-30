@@ -5,5 +5,6 @@ export type project = {
     oneliner: string,
     github: string,
     link: string,
-    blog: boolean
+    blog: boolean,
+    blogname: string,
 }

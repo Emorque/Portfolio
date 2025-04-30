@@ -20,18 +20,9 @@ export const Project = ({info} : ProjectInterface) => {
                 <div className='plinks'>
                     <a href={info.link}>Visit</a>
                     <a href={info.github}>GitHub</a>
-                    {info.blog && <a href="">Read More</a>}
-                    {/* <button>Video</button> */}
+                    {info.blog && <a href={`/post/${info.blogname}`}>Read More</a>}
                 </div>
             </div>
-            {/* <video 
-            src={info.video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            >
-            </video> */}
             <br/>
         </div>
     )
