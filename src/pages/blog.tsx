@@ -1,5 +1,4 @@
 import { Header } from "../components/header"
-import { main_projects } from "../db/projects"
 import "./blog.css"
 
 export const Blog = () => {

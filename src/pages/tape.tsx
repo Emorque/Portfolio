@@ -1,4 +1,4 @@
-import { useReducer, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import { Header } from "../components/header"
 import "./blog.css"
 
@@ -47,6 +47,9 @@ export const Tape = () => {
                         </svg>
                         }
                     </button>
+                </div>
+                <div className="tech_stack">
+                    Tech Stack: <span>Next.js, React.js, TypeScript, Three.js, PostgreSQL, Blender, GSAP</span>
                 </div>
                 <p>Project Tape was born out of wanting to make web app with user-created content. I've loved games like
                     Little Big Planet and the sentimenet behind <span>"Play Create Share"</span>. Plus, the idea of community-based rhythm games has been proven to be successful.
