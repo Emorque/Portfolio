@@ -50,8 +50,8 @@ nav {
 
 
 #main_projects, #experience, #education {
-  background-color: var(--black);
-  border: 2px solid var(--red);
+  background-color: rgba(0, 0, 0, 0.297);
+  border: 3px solid var(--red);
   padding: 1rem;
   margin-right: 4rem;
 }
@@ -114,6 +114,10 @@ a {
   padding-top: .5rem;
 }
 
+.stack p {
+  font-weight: bold;
+}
+
 
 .main_project {
   display: flex;
@@ -133,6 +137,7 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 0.25em;
   * {
     margin-right: 0.5rem;
   }
@@ -158,12 +163,13 @@ a {
 
 .plinks a, .plinks button {
   font-size: 1.5rem;
+  font-weight: bold;
   padding: 0.5rem 1rem;
   border: 0;
   background-color: var(--red);
   color: var(--white);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 250ms ease;
 }
 
 .plinks a:hover, .plinks button:hover {
@@ -188,7 +194,6 @@ a {
   left: 0;
   z-index: 1;
   border: 1px solid white;
-  
   background-size: 100px, 100px;
 }
 
@@ -291,13 +296,13 @@ section {
     repeating-linear-gradient(-45deg, black 0%, black 10%, var(--red) 10%, var(--red) 20%);
   background-size: 150% 50%, 150% 50%;
   background-repeat: no-repeat; 
-  background-position: 0% 100%, 0% 0%;
+  background-position: 55% 100%, 55% 0%;
   transition: background-position 1s ease;
   clip-path: polygon(0% 0%,100% 0%,100% 100%,50% 100%,50% 50%,0% 50%);
 }
 
 .abstract_bg:hover .section_title::after {
-  background-position: 25% 100%, 25% 0%;
+  background-position: 75% 100%, 75% 0%;
 }
 
 #main_projects, #experience, #education {
@@ -402,9 +407,10 @@ section {
 #footer {
   display: flex;
   flex-direction: column;
-  /* position: fixed; */
   align-items: flex-end;
-  /* bottom: 0; */
-  /* right: 0; */
   padding: 10px;
+}
+
+.blue {
+  color: var(--blue)
 }

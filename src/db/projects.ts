@@ -12,23 +12,23 @@ export const main_projects : project[] = [
         blogname: "project_tape"
     },
     {
-        name: "Steam Fiber",
+        name: "SteamFiber",
         video: "https://2rhmsj9j95.ufs.sh/f/fgk4iGRrXmkVkaEXbCNmEZLyIF903fGBSa178iohzWqAdpXY",
         stack: ["Next.js", "React.js", "TypeScript", "Three.js", "PostgreSQL", "GSAP"],
         oneliner: "Your 3D Steam Network",
         github: "https://github.com/Emorque/steamfiber",
         link: "https://www.steamfiber.com/",
-        blog: false,
+        blog: true,
         blogname: "steam_fiber"
     },  
     {
-        name: "Octopath Traveler UI",
+        name: "Octopath UI Remake",
         video: "https://2rhmsj9j95.ufs.sh/f/fgk4iGRrXmkVXzMYftitSCoAZGYKFak2w5pOy4lbDuhvcr3W",
         stack: ["HTML", "CSS", "JavaScript"],
-        oneliner: "Remaking OT's UI",
+        oneliner: "Remaking Octopath Traveler's UI",
         github: "https://github.com/Emorque/Octopath-Traveler-UI",
         link: "https://emorque.github.io/Octopath-Traveler-UI/",
-        blog: false,
+        blog: true,
         blogname: "ot"
     },    
 ]

@@ -1,6 +1,7 @@
 import { useRef, useState } from "react"
 import { Header } from "../components/header"
 import "./blog.css"
+import { Link } from "react-router";
 
 export const Tape = () => {
     const videoRef = useRef<HTMLVideoElement>(null)
@@ -55,7 +56,7 @@ export const Tape = () => {
                     Little Big Planet and the sentimenet behind <span>"Play Create Share"</span>. Plus, the idea of community-based rhythm games has been proven to be successful.
                 </p>
                 <p>When it came to deciding on a tech stack, I chose what I was already familar with: <span>Next.js</span>. I had already used the 
-                framework for my previous project, and this seemed like a great way to get more experience with it, and <span>React</span> as a whole.</p>
+                framework for my <Link className="green" to={"/post/steam_fiber"}>previous project</Link>, and this seemed like a great way to get more experience with it, and <span>React</span> as a whole.</p>
                 
                 <p>For more experience with <span>Three.js</span>, I decided to make the main menu within a 3D room, where menu navigation was tied to where you placed in the room. 
                     It's not a new concept, but seeing it while playing Hi-Fi Rush made me want to try it as well. I liked the dynamic feel it provided.
@@ -67,7 +68,7 @@ export const Tape = () => {
                 <p><span>Blender</span> was used for the 3D room. Since I have never used it before, I decided to go simple and achieve it with the wireframe look. It reduced the need for complex textures which helps with load times as well.
                 Plus, it gives Vib-Ribbon vibes. </p>
                 
-                <h2>Future Work</h2>
+                <h2><span>Future Work</span></h2>
                 <p>There are endless amounts of features to add to the game, which is both a blessing and a curse. At the moment, I have a solid vertical slice of the game I wanted to make, and 
                     overall feedback has been good. Right now, anyone can jump in, play any song from the global list, and if registered, use the editor to create and upload their own beatmap. 
                 </p>
@@ -75,11 +76,13 @@ export const Tape = () => {
                 <ul>
                     <li>Coming up with a name, "Project Tape" is a placeholder.</li>
                     <li>Rewriting the Game & Editor component in <span>Pixi.js</span>. Leverging WebGL would improve performance, as 
-                    I hit the limitations with CSS Animations.</li>
+                    I've hit limitations with CSS Animations.</li>
                     <li>Map/Menu customizations.</li>
                     <li>Adjustable Mods (ex: 1 HP, Hidden notes).</li>
                     <li>More 3D models (and customizable).</li>
                 </ul>
+                <br/>
+                <h2><span>Links</span></h2>
                 <p>You can play it yourself here: <a href="https://project-tape.vercel.app/">Project Tape</a><br/>
                 You can view the source code here: <a href="https://github.com/Emorque/project-tape">GitHub</a></p>
                 <br/>

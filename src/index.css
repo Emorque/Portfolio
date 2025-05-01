@@ -21,9 +21,11 @@
   /* --blackAccent: 0f0f0f */
   --red: #aa0047ff;
   --redAccent: #DD005C;
+  --green: #00AA63;
   --black: #0e0e0e;
   --blackAccent: #0f0f0f;
   --white: #d3d3d3;
+  --blue: #58c4dc;
 }
 
 *,

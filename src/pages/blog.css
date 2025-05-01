@@ -24,16 +24,16 @@
     top: 100%;
     width: 100%;
     height: 0.3rem;
-    background-color: var(--redAccent);
+    background-color: var(--red);
     content: "";
 }
 
-#blog_content a {
+a {
     color: var(--red);
     transition: color 250ms ease;
 }
 
-#blog_content a:hover {
+a:hover {
     color: var(--redAccent);
 }
 
@@ -44,7 +44,7 @@ span {
 video {
     width: 100%;
     aspect-ratio: 16/9;
-    border: 1px solid var(--red); 
+    border: 3px solid var(--red); 
 }
 
 li {
@@ -83,3 +83,14 @@ li {
         /* justify-content: space-between; */
     }
 }
+
+.green {
+    color: var(--green)
+}
+
+@media screen and (max-width: 480px) {
+    .long_title::after {
+        width: 50%;
+        left: 75%;
+      }
+  }
