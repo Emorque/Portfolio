@@ -1,8 +1,10 @@
+import { Link } from "react-router";
+
 export const Header = () => {
     return (
         <header id='header'>
         <nav id='nav_bar'>
-          <a href="/"><img id='logo' src='/logo.svg'/></a>
+          <Link to="/"><img id='logo' src='/logo.svg'/></Link>
           <div id='links'>
             {/* <a href='/blog'>Blog</a> */}
             <a href='https://github.com/Emorque'>

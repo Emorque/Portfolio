@@ -1,4 +1,5 @@
 import { project } from "./helperTypes"
+import { Link } from "react-router";
 
 interface ProjectInterface {
     info : project
@@ -20,7 +21,7 @@ export const Project = ({info} : ProjectInterface) => {
                 <div className='plinks'>
                     <a href={info.link}>Visit</a>
                     <a href={info.github}>GitHub</a>
-                    {info.blog && <a href={`/post/${info.blogname}`}>Read More</a>}
+                    {info.blog && <Link to={`/post/${info.blogname}`}>Read More</Link>}
                 </div>
             </div>
             <br/>
