@@ -298,11 +298,19 @@ section {
   background-repeat: no-repeat; 
   background-position: 55% 100%, 55% 0%;
   transition: background-position 1s ease;
-  clip-path: polygon(0% 0%,100% 0%,100% 100%,50% 100%,50% 50%,0% 50%);
+  clip-path: polygon(0% 0%,100% 0%,100% 100%,50% 100%,50% 40%,0% 40%);
 }
 
+/* On smaller devices, the height of the clip-path isn't flush */
+@media screen and (max-width: 500px) {
+  .main_section::after {
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,52.5% 100%,52.5% 30%,0% 30%);
+  }  
+}
+
+
 .abstract_bg:hover .section_title::after {
-  background-position: 75% 100%, 75% 0%;
+  background-position: 70% 100%, 70% 0%;
 }
 
 #main_projects, #experience, #education {

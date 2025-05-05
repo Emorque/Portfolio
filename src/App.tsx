@@ -39,7 +39,7 @@ function App() {
         <br/>
 
         <section id='main_projects' className='abstract_bg'>
-          <h1 className='section_title'>PROJECTS</h1>
+          <h1 className='section_title main_section'>PROJECTS</h1>
           <br/>
             {main_projects.map((item, index) => (
               <Project info={item} key={`Project: ${index}`}/>
@@ -48,7 +48,7 @@ function App() {
 
         <br/>
         <section id='experience' className='abstract_bg'>
-          <h1 className='section_title'>EXPERIENCE</h1>
+          <h1 className='section_title main_section'>EXPERIENCE</h1>
           <br/>
           <div id='experience_content'>
             <div className='exp'>
@@ -82,7 +82,7 @@ function App() {
 
         <br/>
         <section id='education' className='abstract_bg'>
-          <h1 className='section_title'>EDUCATION</h1>
+          <h1 className='section_title main_section'>EDUCATION</h1>
           <br/>
           <div id='education_content'>
             <div>

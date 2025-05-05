@@ -28,6 +28,14 @@
     content: "";
 }
 
+.blog_title::after {
+    background: repeating-linear-gradient(45deg, var(--red) 0%, var(--red) 10%, transparent 10%, transparent 20%), 
+    repeating-linear-gradient(-45deg, transparent 0%, transparent 10%, var(--red) 10%, var(--red) 20%);
+  background-size: 150% 50%, 150% 50%;
+  background-repeat: no-repeat; 
+  background-position: 55% 100%, 55% 0%;
+}
+
 a {
     color: var(--red);
     transition: color 250ms ease;

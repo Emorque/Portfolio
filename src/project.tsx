@@ -13,9 +13,7 @@ export const Project = ({info} : ProjectInterface) => {
                 <h2>{info.oneliner}</h2>
                 <div className='pStack'>
                     {info.stack.map((item, index) => (
-                        <>
-                            <p key={index}>{item}</p>
-                        </>
+                        <p key={`${info.name}-uses-${index}`}>{item}</p>
                     ))}
                 </div>
                 <div className='plinks'>
