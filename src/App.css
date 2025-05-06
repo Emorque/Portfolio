@@ -56,6 +56,24 @@ nav {
   margin-right: 4rem;
 }
 
+.project_photo_btn {
+  background-color: transparent;
+  border: 0;
+  padding-top: 0.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.project_photo_btn:hover {
+  opacity: 1;
+}
+
+.project_photo_btn svg {
+  width: 2rem;
+  aspect-ratio: 1;
+  fill: var(--redAccent);
+}
+
 .abstract_bg {
   position: relative;
 }
@@ -131,6 +149,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+}
+
+.project_title{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem
 }
 
 .stack {
@@ -240,10 +264,6 @@ a {
 #hero {
   display: flex;
   flex-direction: row;
-}
-img {
-  width: 200px;
-  aspect-ratio: 2/2;
 }
 
 #main_content_old {
@@ -399,8 +419,36 @@ section {
   flex-shrink: 0; /* Prevent the bar from shrinking */
 }
 
+.project_photos {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden; /* Prevent vertical scrolling if not needed */
+  scrollbar-width: thin;
+  scrollbar-color: var(--red) transparent;
+  transition: max-height 0.5s ease; /* Transition max-height */
+}
+
+.project_photos img {
+  width: 90%;
+  aspect-ratio: 16/9;
+  transition: height 1s ease;
+  display: block; /* Ensure images behave as block-level elements */
+
+}
 
 
+.show_photos {
+  max-height: 400px;
+}
+
+.no_photos {
+  max-height:  0;
+  scrollbar-width: none;
+}
 
 
 .social_links {

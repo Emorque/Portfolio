@@ -9,7 +9,9 @@ export const main_projects : project[] = [
         github: "https://github.com/Emorque/project-tape",
         link: "https://project-tape.vercel.app/",
         blog: true,
-        blogname: "project_tape"
+        blogname: "project_tape",
+        demo: "https://project-tape.vercel.app/tutorial",
+        photos: ["/projects/tape_1.webp", "/projects/tape_2.webp", "/projects/tape_3.webp", "/projects/tape_4.webp"]
     },
     {
         name: "SteamFiber",
@@ -19,7 +21,9 @@ export const main_projects : project[] = [
         github: "https://github.com/Emorque/steamfiber",
         link: "https://www.steamfiber.com/",
         blog: true,
-        blogname: "steam_fiber"
+        blogname: "steam_fiber",
+        demo: "https://www.steamfiber.com/demo",
+        photos: ["/projects/sf_1.webp", "/projects/sf_2.webp", "/projects/sf_3.webp"]
     },  
     {
         name: "Octopath UI Remake",
@@ -29,6 +33,8 @@ export const main_projects : project[] = [
         github: "https://github.com/Emorque/Octopath-Traveler-UI",
         link: "https://emorque.github.io/Octopath-Traveler-UI/",
         blog: true,
-        blogname: "ot"
+        blogname: "ot",
+        demo: "",
+        photos: ["/projects/ot_1.webp", "/projects/ot_2.webp", "/projects/ot_3.webp"]
     },    
 ]

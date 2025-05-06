@@ -23,15 +23,22 @@ export const OT = () => {
         <div id="blog_page">
             <Header/>
             <div id="blog_content">
-                <video 
-                ref={videoRef}
-                src={"https://2rhmsj9j95.ufs.sh/f/fgk4iGRrXmkVXzMYftitSCoAZGYKFak2w5pOy4lbDuhvcr3W"}
-                autoPlay
-                loop
-                muted
-                playsInline
-                >
-                </video>
+                <div className="video_container">
+                    <video 
+                    ref={videoRef}
+                    src={"https://2rhmsj9j95.ufs.sh/f/fgk4iGRrXmkVXzMYftitSCoAZGYKFak2w5pOy4lbDuhvcr3W"}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    >
+                    </video>
+                    <div className="loading">
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>    
+                    </div>    
+                </div>
                 <div id="video_header">
                     <h1 className="section_title blog_title long_title">Remaking OT's UI</h1>
                     <button className="video_btn" onClick={toggleVideo}>

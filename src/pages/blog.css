@@ -18,6 +18,9 @@
 #blog_content p {
     padding: 20px 0px;
 }
+ul {
+    list-style-position: inside;
+}
 
 .blog_title::before {
     position: absolute;
@@ -53,6 +56,54 @@ video {
     width: 100%;
     aspect-ratio: 16/9;
     border: 3px solid var(--red); 
+    position: relative;
+    z-index: 2;
+}
+
+.video_container { 
+    position: relative;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* background-color: red; */
+    height: 50%;
+    /* height: 50%; */
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1; /* Place the pseudo-element above the video */
+}
+
+.loading span {
+    height: fit-content;
+    font-size: 10rem;
+    color: var(--red);
+    animation: loadingAnimation 3s ease 0s infinite;
+}
+
+.loading span:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+.loading span:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(0%,-25%);
+    }
+    100% {
+        transform: translate(0,0);
+    }
 }
 
 li {

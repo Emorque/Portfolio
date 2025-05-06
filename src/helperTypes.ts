@@ -7,4 +7,6 @@ export type project = {
     link: string,
     blog: boolean,
     blogname: string,
+    demo: string,
+    photos: string[]
 }

@@ -24,15 +24,23 @@ export const Tape = () => {
         <div id="blog_page">
             <Header/>
             <div id="blog_content">
-                <video 
-                ref={videoRef}
-                src={"https://2rhmsj9j95.ufs.sh/f/fgk4iGRrXmkVEchiOmt0gdx1pey4lHzZ7jkVb6fOYuFvKGh3"}
-                autoPlay
-                loop
-                muted
-                playsInline
-                >
-                </video>
+                <div className="video_container">
+                    <video 
+                    ref={videoRef}
+                    src={"https://2rhmsj9j95.ufs.sh/f/fgk4iGRrXmkVEchiOmt0gdx1pey4lHzZ7jkVb6fOYuFvKGh3"}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    >
+                    </video>
+                    <div className="loading">
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>    
+                    </div>    
+                </div>
+
                 <div id="video_header">
                     <h1 className="section_title blog_title">Project Tape</h1>
                     <button className="video_btn" onClick={toggleVideo}>

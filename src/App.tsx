@@ -44,6 +44,7 @@ function App() {
             {main_projects.map((item, index) => (
               <Project info={item} key={`Project: ${index}`}/>
             ))}
+          <p>*Demo Links provide a curated experience. ~2 minutes to complete.</p>
         </section>
 
         <br/>
