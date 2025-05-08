@@ -37,4 +37,17 @@ export const main_projects : project[] = [
         demo: "",
         photos: ["/projects/ot_1.webp", "/projects/ot_2.webp", "/projects/ot_3.webp"]
     },    
+
+    {
+        name: "Poly-Gen",
+        video: "https://2rhmsj9j95.ufs.sh/f/fgk4iGRrXmkVXzMYftitSCoAZGYKFak2w5pOy4lbDuhvcr3W",
+        stack: ["React", "TypeScript"],
+        oneliner: "Create your own Polyrhythm",
+        github: "https://github.com/Emorque/poly-generator",
+        link: "https://poly-gen.vercel.app/",
+        blog: true,
+        blogname: "poly_gen",
+        demo: "",
+        photos: ["/projects/poly_1.webp", "/projects/poly_2.webp"]
+    },    
 ]

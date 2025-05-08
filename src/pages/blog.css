@@ -37,6 +37,7 @@ ul {
   background-size: 150% 50%, 150% 50%;
   background-repeat: no-repeat; 
   background-position: 55% 100%, 55% 0%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 52% 100%, 52% 40%, 0% 40%);
 }
 
 a {

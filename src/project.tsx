@@ -7,7 +7,7 @@ interface ProjectInterface {
 }
 
 export const Project = ({info} : ProjectInterface) => {
-    const [viewPhotos, setViewPhotos] = useState<boolean>(true)
+    const [viewPhotos, setViewPhotos] = useState<boolean>(false)
 
     const togglePhotos = () => {
         setViewPhotos(!viewPhotos)
