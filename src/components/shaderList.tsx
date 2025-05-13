@@ -1,23 +1,19 @@
-import { useState } from "react";
-import { project } from "./helperTypes"
-import { Link } from "react-router";
+import { useState } from "react"
+import { ShaderPic } from "./shaderPic"
 
-interface ProjectInterface {
-    info : project
-}
+export const ShaderList = () => {
 
-export const Project = ({info} : ProjectInterface) => {
-    const [viewPhotos, setViewPhotos] = useState<boolean>(false)
+    const [viewPhotos, setViewPhotos] = useState<boolean>(true)
 
     const togglePhotos = () => {
         setViewPhotos(!viewPhotos)
     }
     
-    return(
+    return (
         <div className='main_project'>
             <div className='main_project_info'>
                 <div className="project_title">
-                    <h2 className="title">{info.name}</h2>
+                    <h2 className="title">GLSL Art</h2>
                     <button className="project_photo_btn" onClick={togglePhotos}>
                         {
                             viewPhotos?
@@ -33,25 +29,11 @@ export const Project = ({info} : ProjectInterface) => {
                         }
                     </button>
                 </div>
-                <h2>{info.oneliner}</h2>
-                <div className='pStack'>
-                    {info.stack.map((item, index) => (
-                        <p key={`${info.name}-uses-${index}`}>{item}</p>
-                    ))}
-                </div>
-                <div className='plinks'>
-                    <a href={info.link}>Visit</a>
-                    {info.demo !== "" && <a href={info.demo}>Demo</a>}
-                    <a href={info.github}>GitHub</a>
-                    {info.blog && <Link to={`/post/${info.blogname}`}>Read More</Link>}
-                </div>
-                <div className={viewPhotos? "project_photos show_photos": "project_photos no_photos"}  >
-                    {info.photos.map((item, index) => (
-                        <img src={item} key={`Photo ${index} for ${info.name}`}></img>
-                    ))}
+                <br/>
+                <div className={viewPhotos? "project_photos show_shader": "project_photos hide_shader"}  >
+                    <ShaderPic/>
                 </div>
             </div>
-            {/* {viewPhotos && <br/>} */}
         </div>
     )
 }

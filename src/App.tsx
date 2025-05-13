@@ -1,5 +1,6 @@
 import './App.css'
 import { Header } from './components/header'
+import { ShaderList } from './components/shaderList'
 import { main_projects } from './db/projects'
 import { Project } from './project'
 
@@ -43,8 +44,10 @@ function App() {
           <br/>
             {main_projects.map((item, index) => (
               <Project info={item} key={`Project: ${index}`}/>
-            ))}
+            ))}          
           <p>*Demo Links provide a curated experience. ~2 minutes to complete.</p>
+          <div className='h_bar'/>
+          <ShaderList/>
         </section>
 
         <br/>

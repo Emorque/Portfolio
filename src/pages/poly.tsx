@@ -74,8 +74,7 @@ export const Poly = () => {
                 <h2><span>Future Work</span></h2>
                 <p>Only a few things I'd like to add:</p>
                 <ul>
-                    <li>Allow users to upload their own short audio file, and create multiple pitches from it to play for each note.</li>
-                    <li>Making edits more dyanmic (ex: When changing the color, the color updates in real time).</li>
+                    <li>Allow users to record their own short audio file, and create multiple pitches from it to play for each note.</li>
                     <li>Adding unique animations.</li>
                 </ul>
                 <br/>
