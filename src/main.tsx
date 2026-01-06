@@ -7,7 +7,6 @@ import { Tape } from './pages/tape.tsx';
 import { Fiber } from './pages/fiber.tsx';
 import { OT } from './pages/ot.tsx';
 import { Poly } from './pages/poly.tsx';
-import { Shader } from './pages/shader.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -18,7 +17,6 @@ createRoot(document.getElementById('root')!).render(
         <Route path='post/steam_fiber' element={<Fiber/>}></Route>
         <Route path='post/ot' element={<OT/>}></Route>
         <Route path='post/poly_gen' element={<Poly/>}></Route>
-        <Route path='shader/:shaderID' element={<Shader/>}></Route>
       </Routes> 
     </BrowserRouter>
   </StrictMode>,
